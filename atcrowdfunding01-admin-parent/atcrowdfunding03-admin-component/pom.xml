@@ -88,6 +88,7 @@
             <artifactId>logback-classic</artifactId>
         </dependency>
         <!--lombok依赖 master test-->
+        <!--lombok依赖 dev test-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
