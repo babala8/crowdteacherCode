@@ -52,6 +52,7 @@ public class ProjectServiceImpl implements ProjectService {
         projectPO.setMemberid(memberId);
         String createDate = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
         projectPO.setCreatedate(createDate);
+        projectPO.setDeploydate(createDate);
         projectPO.setStatus(0);
         projectPOMapper.insertSelective(projectPO);
 
