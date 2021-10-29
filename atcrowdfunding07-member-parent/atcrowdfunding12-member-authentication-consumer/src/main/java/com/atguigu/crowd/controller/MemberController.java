@@ -101,7 +101,7 @@ public class MemberController {
 
             return "member-reg";
         }
-
+        // 删除验证码
         redisRemoteService.removeRedisKeyRemote(key);
 
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();

@@ -46,6 +46,7 @@
       <id column="id" property="id"/>
       <result column="name" property="name"/>
       <result column="remark" property="remark"/>
+      <!--第四个级联属性(包含其他自定义类)-->
       <collection property="portalProjectVOList" column="id" ofType="com.atguigu.crowd.vo.PortalProjectVO"
                   select="com.atguigu.crowd.mapper.ProjectPOMapper.selectPortalProjectVOList"/>
   </resultMap>
@@ -80,6 +81,7 @@
       <result column="createdate" property="createdate" jdbcType="VARCHAR"/>
       <result column="follower" property="follower" jdbcType="INTEGER"/>
       <result column="header_picture_path" property="headerPicturePath" jdbcType="VARCHAR"/>
+
   </resultMap>
     <sql id="Example_Where_Clause">
         <where>
